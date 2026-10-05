@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AXIONLOG · Gestión OTIF</title><link rel="stylesheet" href="styles.css"></head>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AXIONLOG · Gestión OTIF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-<aside id="side"><div class="brand"><b>✱<span> AXIONLOG</span></b><small>Planta 0801 · Gestión OTIF</small></div>
-<button class="hide" id="hide"><span id="hi">«</span><span class="tx"> Ocultar menú</span></button><nav id="nav"></nav></aside>
-<div id="wrap"><div id="banner">⚠ <span><b>Datos de ejemplo:</b> el inventario y los pedidos son sintéticos (el OTIF y las causas sí son del cliente). Los resultados no reflejan la operación real.</span><button class="btn" data-go="datos">Cargar mis datos</button></div>
-<main id="view"></main></div>
-<dialog id="dlg"><h3>Pegar datos o enlace</h3><p class="mu">Pega el link de un Google Sheet (compartido como "cualquiera con el enlace") o el contenido CSV.</p><textarea id="ta" rows="6"></textarea><div class="row"><button class="btn p" id="ok">Cargar</button><button class="btn" id="cx">Cancelar</button><span id="dm" class="mu"></span></div></dialog>
-<script src="app.js"></script></body></html>
+
+  <!-- Menú lateral -->
+  <aside id="side">
+    <div class="brand">
+      <b>✱<span> AXIONLOG</span></b>
+      <small>Planta 0801 · Gestión OTIF</small>
+    </div>
+    <button class="hide" id="hide">
+      <span id="hi">«</span><span class="tx"> Ocultar menú</span>
+    </button>
+    <nav id="nav"></nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <div id="wrap">
+    <div id="banner">
+      ⚠ <span><b>Datos de ejemplo:</b> el inventario y los pedidos son sintéticos (el OTIF y las causas sí son del cliente). Los resultados no reflejan la operación real.</span>
+      <button class="btn" data-go="datos">Cargar mis datos</button>
+    </div>
+    <main id="view"></main>
+  </div>
+
+  <!-- Diálogo: pegar datos o enlace -->
+  <dialog id="dlg">
+    <h3>Pegar datos o enlace</h3>
+    <p class="mu">Pega el link de un Google Sheet (compartido como "cualquiera con el enlace") o el contenido CSV.</p>
+    <textarea id="ta" rows="6"></textarea>
+    <div class="row">
+      <button class="btn p" id="ok">Cargar</button>
+      <button class="btn" id="cx">Cancelar</button>
+      <span id="dm" class="mu"></span>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
